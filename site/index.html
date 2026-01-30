@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <title>Прокат «У Андрія» | Лижі та сноуборди на Красії — Дешевше ніж на курорті</title>
   <meta name="description" content="Прокат лиж та сноубордів на Красії. Знаходимось прямо під горою на повороті до Теремка. Дешевше ніж офіційний прокат. Телефонуйте: +380 66 649 9206">
   <meta name="keywords" content="прокат лиж Красія, прокат сноубордів Красія, лижі напрокат Закарпаття, гірськолижний прокат Вишка, ski rental Krasiya">
@@ -36,18 +36,18 @@
   <!-- Preload critical resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="images/hero.jpg">
+  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-84210RXFKR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-84210RXFKR');
   </script>
   
   <!-- Schema.org JSON-LD -->
@@ -62,7 +62,7 @@
     "url": "https://prokat-andriya.pp.ua/",
     "telephone": "+380666499206",
     "priceRange": "$$",
-    "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=800",
+    "image": "https://prokat-andriya.pp.ua/images/hero.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "с. Вишка, під горою, поворот на садибу Теремок",
@@ -182,16 +182,13 @@
     @media(min-width:768px){.menu-toggle{display:none}}
     .menu-toggle svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:2}
     
-    .mobile-menu{position:absolute;top:100%;left:0;right:0;background:rgba(15,23,42,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 20px 50px rgba(0,0,0,.4);max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;border-radius:0 0 1.5rem 1.5rem}
+    .mobile-menu{position:absolute;top:100%;left:0;right:0;background:rgba(15,23,42,.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 20px 50px rgba(0,0,0,.5);max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;border-radius:0 0 1.5rem 1.5rem;border-top:1px solid rgba(255,255,255,.1)}
     .mobile-menu.open{max-height:450px;opacity:1}
     @media(min-width:768px){.mobile-menu{display:none}}
-    .header.scrolled .mobile-menu{background:rgba(255,255,255,.98);box-shadow:0 20px 50px rgba(0,0,0,.15)}
-    .mobile-menu-inner{padding:1.5rem 1.25rem 2rem}
-    .mobile-menu a{display:flex;align-items:center;padding:1rem;font-weight:600;font-size:1.125rem;color:rgba(255,255,255,.9);border-radius:.75rem;margin-bottom:.5rem;transition:all .2s}
-    .mobile-menu a:hover{background:rgba(255,255,255,.1);color:var(--brand-light)}
-    .header.scrolled .mobile-menu a{color:var(--slate-800)}
-    .header.scrolled .mobile-menu a:hover{background:var(--slate-50);color:var(--brand)}
-    .mobile-menu .mobile-cta{margin-top:.5rem;display:flex;align-items:center;justify-content:center;gap:.625rem;background:linear-gradient(135deg,var(--brand-light),var(--brand));color:#fff;padding:1.125rem;border-radius:1rem;font-weight:700;border:0;box-shadow:0 8px 25px rgba(14,165,233,.3);font-size:1rem}
+    .mobile-menu-inner{padding:1.5rem 1.25rem 2rem;background:rgba(15,23,42,.98)}
+    .mobile-menu a{display:flex;align-items:center;padding:1rem 1.25rem;font-weight:600;font-size:1.125rem;color:#fff;border-radius:.75rem;margin-bottom:.5rem;transition:all .2s;background:rgba(255,255,255,.05)}
+    .mobile-menu a:hover{background:rgba(255,255,255,.15);color:var(--brand-light)}
+    .mobile-menu .mobile-cta{margin-top:.75rem;display:flex;align-items:center;justify-content:center;gap:.625rem;background:linear-gradient(135deg,var(--brand-light),var(--brand));color:#fff;padding:1.125rem;border-radius:1rem;font-weight:700;border:0;box-shadow:0 8px 25px rgba(14,165,233,.4);font-size:1rem}
     .mobile-menu .mobile-cta svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2}
     
     /* Hero */
@@ -258,15 +255,15 @@
     .process-grid{display:grid;gap:2rem;position:relative}
     @media(min-width:768px){.process-grid{grid-template-columns:repeat(3,1fr);gap:3rem}}
     .process-step{text-align:center;position:relative}
-    .process-icon{width:100px;height:100px;margin:0 auto 1.75rem;background:linear-gradient(135deg,#fff,#f8fafc);border:2px solid var(--slate-100);border-radius:1.75rem;display:flex;align-items:center;justify-content:center;box-shadow:0 15px 50px rgba(0,0,0,.08);transition:all .4s cubic-bezier(.4,0,.2,1);position:relative}
-    .process-icon::before{content:'';position:absolute;inset:-3px;border-radius:2rem;background:linear-gradient(135deg,var(--brand-light),var(--brand));opacity:0;z-index:-1;transition:opacity .4s}
+    .process-icon{width:100px;height:100px;margin:0 auto 1.75rem;background:linear-gradient(135deg,#fff,#f8fafc);border:2px solid var(--slate-100);border-radius:1.75rem;display:flex;align-items:center;justify-content:center;box-shadow:0 15px 50px rgba(0,0,0,.08);transition:all .4s cubic-bezier(.4,0,.2,1);position:relative;z-index:1;isolation:isolate}
+    .process-icon::before{content:'';position:absolute;inset:-3px;border-radius:2rem;background:linear-gradient(135deg,var(--brand-light),var(--brand));opacity:0;z-index:-1;transition:opacity .4s;pointer-events:none}
     .process-step:hover .process-icon{transform:translateY(-8px) scale(1.05);border-color:transparent;box-shadow:0 25px 60px rgba(14,165,233,.2)}
     .process-step:hover .process-icon::before{opacity:1}
     .process-icon svg{width:36px;height:36px;stroke:var(--brand);fill:none;stroke-width:1.5;transition:all .3s}
-    .process-step:hover .process-icon svg{stroke:var(--brand-dark);transform:scale(1.1)}
+    .process-step:hover .process-icon svg{stroke:#fff;transform:scale(1.1)}
     .process-step h3{font-size:1.3125rem;font-weight:800;color:var(--slate-900);margin-bottom:.875rem}
     .process-step p{color:var(--slate-500);max-width:300px;margin:0 auto 1.25rem;line-height:1.7}
-    .process-link{display:inline-flex;align-items:center;gap:.375rem;color:var(--brand);font-weight:700;font-size:.9375rem;transition:all .3s}
+    .process-link{display:inline-flex;align-items:center;gap:.375rem;color:var(--brand);font-weight:700;font-size:.9375rem;transition:all .3s;text-decoration:none;cursor:pointer;position:relative;z-index:10}
     .process-link svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .3s}
     .process-link:hover{color:var(--brand-dark)}
     .process-link:hover svg{transform:translateX(4px)}
@@ -369,7 +366,10 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="images/hero.jpg" alt="Прокат лиж «У Андрія» — будівля прокату на Красії" width="1600" height="1200" loading="eager">
+        <picture>
+          <source srcset="images/hero.webp" type="image/webp">
+          <img src="images/hero.jpg" alt="Прокат лиж «У Андрія» — будівля прокату на Красії" width="1280" height="964" loading="eager">
+        </picture>
       </div>
       <div class="hero-content">
         <div class="hero-badge">
