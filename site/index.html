@@ -42,7 +42,8 @@
   <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
   
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -560,6 +561,7 @@
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
+                credentialless
                 title="Прокат «У Андрія» на Google Maps">
               </iframe>
               <a href="https://www.google.com/maps/dir//Прокат+у+Андрія,+Вишка,+Закарпатська+область/@48.9494227,22.6581271,17z" target="_blank" rel="noopener noreferrer" class="location-map-btn" style="position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);z-index:10">
