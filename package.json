@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx serve . -p 3000",
-    "start": "npx serve . -p 3000"
+    "dev": "npx serve site -p 3000",
+    "start": "npx serve site -p 3000"
   }
 }
