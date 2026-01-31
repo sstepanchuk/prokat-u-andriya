@@ -6,34 +6,34 @@
   <title>Сторінку не знайдено | Прокат «У Андрія»</title>
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Manrope',system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;text-align:center;padding:2rem;position:relative;overflow:hidden}
-    body::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 30%,rgba(14,165,233,.15) 0%,transparent 50%);animation:glow 15s ease-in-out infinite alternate}
-    body::after{content:'';position:absolute;bottom:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle at 70% 70%,rgba(2,132,199,.1) 0%,transparent 50%);animation:glow 20s ease-in-out infinite alternate-reverse}
-    @keyframes glow{0%{transform:translate(0,0)}100%{transform:translate(5%,5%)}}
+    html,body{height:100vh;height:100svh;overflow:hidden}
+    body{font-family:'Manrope',system-ui,sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;text-align:center;padding:2rem;position:relative}
+    body::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 30%,rgba(14,165,233,.15) 0%,transparent 50%);-webkit-animation:glow 15s ease-in-out infinite alternate;animation:glow 15s ease-in-out infinite alternate}
+    body::after{content:'';position:absolute;bottom:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle at 70% 70%,rgba(2,132,199,.1) 0%,transparent 50%);-webkit-animation:glow 20s ease-in-out infinite alternate-reverse;animation:glow 20s ease-in-out infinite alternate-reverse}
+    @-webkit-keyframes glow{0%{-webkit-transform:translate(0,0);transform:translate(0,0)}100%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}}
+    @keyframes glow{0%{-webkit-transform:translate(0,0);transform:translate(0,0)}100%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}}
     .c{max-width:450px;position:relative;z-index:1}
-    .icon{width:80px;height:80px;margin:0 auto 2rem;background:linear-gradient(135deg,rgba(14,165,233,.2),rgba(2,132,199,.1));border-radius:1.5rem;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1)}
-    .icon svg{width:40px;height:40px;stroke:#38bdf8;fill:none;stroke-width:1.5}
-    h1{font-size:clamp(5rem,15vw,8rem);font-weight:900;background:linear-gradient(135deg,#38bdf8,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.5rem}
+    h1{font-size:5rem;font-size:clamp(5rem,15vw,8rem);font-weight:900;background:linear-gradient(135deg,#38bdf8,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.5rem}
     h2{font-size:1.5rem;font-weight:700;color:rgba(255,255,255,.9);margin-bottom:1rem}
     p{font-size:1.125rem;color:rgba(255,255,255,.6);margin-bottom:2.5rem;line-height:1.7}
-    a{display:inline-flex;align-items:center;gap:.625rem;background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;padding:1rem 2rem;border-radius:1rem;font-weight:700;font-size:1.0625rem;text-decoration:none;transition:all .3s cubic-bezier(.4,0,.2,1);box-shadow:0 10px 40px rgba(14,165,233,.3)}
-    a:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(14,165,233,.4)}
-    a svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .3s}
-    a:hover svg{transform:translateX(-4px)}
+    a{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:linear-gradient(135deg,#0ea5e9,#0284c7);color:#fff;padding:1rem 2rem;border-radius:1rem;font-weight:700;font-size:1.0625rem;text-decoration:none;-webkit-transition:all .3s cubic-bezier(.4,0,.2,1);transition:all .3s cubic-bezier(.4,0,.2,1);box-shadow:0 10px 40px rgba(14,165,233,.3)}
+    a svg{margin-right:.625rem}
+    a:hover{-webkit-transform:translateY(-3px);transform:translateY(-3px);box-shadow:0 20px 50px rgba(14,165,233,.4)}
+    a svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
+    a:hover svg{-webkit-transform:translateX(-4px);transform:translateX(-4px)}
     .footer{position:absolute;bottom:2rem;left:0;right:0;text-align:center;color:rgba(255,255,255,.4);font-size:.875rem}
   </style>
 </head>
 <body>
   <div class="c">
-    <div class="icon">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-    </div>
     <h1>404</h1>
     <h2>Сторінку не знайдено</h2>
     <p>Такої сторінки немає. Але лижі є — на головній!</p>
