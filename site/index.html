@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://prokat-andriya.pp.ua/">
   <meta property="og:title" content="Прокат «У Андрія» | Лижі та сноуборди на Красії">
-  <meta property="og:description" content="Прокат лиж та сноубордів прямо під горою. Зручна локація на повороті до Теремка.">
+  <meta property="og:description" content="Прокат лиж та сноубордів прямо під горою. Зручна локація у с. Вишка, г. Красія.">
   <meta property="og:image" content="https://prokat-andriya.pp.ua/images/og-image.jpg">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="964">
@@ -29,7 +29,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Прокат «У Андрія» | Лижі та сноуборди на Красії">
-  <meta name="twitter:description" content="Прокат лиж та сноубордів прямо під горою. Зручна локація на повороті до Теремка.">
+  <meta name="twitter:description" content="Прокат лиж та сноубордів прямо під горою. Зручна локація у с. Вишка, г. Красія.">
   <meta name="twitter:image" content="https://prokat-andriya.pp.ua/images/og-image.jpg">
   
   <!-- Geo Tags -->
@@ -115,25 +115,10 @@
     /* Animations */
     @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
     @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    @keyframes fadeInScale{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-    @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
-    @keyframes loaderFade{0%{opacity:1}100%{opacity:0;visibility:hidden}}
     @keyframes loaderSpin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
     @keyframes loaderPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.2);opacity:.7}}
     @keyframes loaderSnow{0%{transform:translateY(-10px);opacity:0}50%{opacity:1}100%{transform:translateY(10px);opacity:0}}
     @keyframes glow{0%,100%{box-shadow:0 10px 40px rgba(14,165,233,.4)}50%{box-shadow:0 15px 50px rgba(14,165,233,.6)}}
-    @keyframes slideInLeft{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
-    @keyframes slideInRight{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
-    @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-8px)}60%{transform:translateY(-4px)}}
-    .animate-fade-in-up{animation:fadeInUp .8s ease-out both}
-    .animate-fade-in{animation:fadeIn .6s ease-out both}
-    .animate-float{animation:float 4s ease-in-out infinite}
-    .delay-1{animation-delay:.1s}
-    .delay-2{animation-delay:.2s}
-    .delay-3{animation-delay:.3s}
-    .delay-4{animation-delay:.4s}
     
     /* Page Loader */
     .page-loader{position:fixed;top:0;right:0;bottom:0;left:0;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);z-index:9999;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;transition:opacity .3s ease-out,visibility .3s;will-change:opacity}
@@ -154,9 +139,6 @@
     
     /* Focus styles for accessibility */
     a:focus-visible,button:focus-visible{outline:2px solid var(--brand-light);outline-offset:2px;border-radius:4px}
-    
-    /* Smooth image loading */
-    img{opacity:1}
     
     /* Colors */
     :root{--brand:#0284c7;--brand-light:#0ea5e9;--brand-dark:#0369a1;--slate-50:#f8fafc;--slate-100:#f1f5f9;--slate-200:#e2e8f0;--slate-300:#cbd5e1;--slate-400:#94a3b8;--slate-500:#64748b;--slate-600:#475569;--slate-800:#1e293b;--slate-900:#0f172a}
@@ -218,10 +200,10 @@
     
     /* Hero */
     .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--slate-900);overflow:hidden;padding:6rem 1rem 4rem}
-    .hero-bg{position:absolute;inset:0}
+    .hero-bg{position:absolute;top:0;right:0;bottom:0;left:0}
     .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.7;transform:scale(1.02)}
-    .hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 0%,rgba(15,23,42,.4) 100%);z-index:1}
-    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.3) 0%,rgba(15,23,42,.6) 50%,rgba(15,23,42,.95) 100%);z-index:2}
+    .hero-bg::before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:radial-gradient(ellipse at center,transparent 0%,rgba(15,23,42,.4) 100%);z-index:1}
+    .hero-bg::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,rgba(15,23,42,.3) 0%,rgba(15,23,42,.6) 50%,rgba(15,23,42,.95) 100%);z-index:2}
     .hero-content{position:relative;z-index:3;text-align:center;max-width:900px;padding:0 1rem}
     .hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.625rem 1.25rem;border-radius:9999px;background:linear-gradient(135deg,rgba(255,255,255,.15),rgba(255,255,255,.05));backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:2rem;animation:fadeInUp .8s ease-out both}
     .hero-badge svg{width:16px;height:16px;stroke:var(--brand-light);fill:none;stroke-width:2}
@@ -246,8 +228,6 @@
     .section-header{text-align:center;margin-bottom:4rem}
     .section-label{color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.875rem;margin-bottom:.5rem}
     .section-title{font-size:clamp(2rem,5vw,3rem);font-weight:800;color:var(--slate-900);letter-spacing:-.02em}
-    .section-title-left{text-align:left}
-    .section-desc{color:var(--slate-500);font-size:1.125rem;max-width:600px;margin:1rem auto 0}
     
     /* Info Section */
     .info-section{background:#fff;padding:1.5rem 0}
@@ -302,6 +282,10 @@
     .location-map-btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 15px 40px rgba(0,0,0,.2)}
     .location-map-btn svg{width:22px;height:22px;stroke:var(--brand);fill:none;stroke-width:2}
     .location-hint{text-align:center;color:var(--slate-400);font-size:.875rem;margin-top:1.25rem}
+    
+    /* Reviews */
+    .reviews-section{background:#fff;padding:3rem 0}
+    @media(min-width:768px){.reviews-section{padding:4rem 0}}
     
     /* Footer */
     .footer{background:linear-gradient(180deg,var(--slate-50),#fff);border-top:1px solid var(--slate-200);padding:3rem 0 7rem}
@@ -477,7 +461,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.0674071896438!2d22.657834!3d48.9494227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739650041756539%3A0xb2d799782ab5fb4!2z0J_RgNC-0LrQsNGCINGDINCQ0L3QtNGA0ZbRjw!5e0!3m2!1suk!2sua!4v1706640000000!5m2!1suk!2sua"
                 width="100%" 
                 height="100%" 
-                style="border:0;position:absolute;inset:0" 
+                style="border:0;position:absolute;top:0;right:0;bottom:0;left:0" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
@@ -488,6 +472,17 @@
             <p class="location-hint">Інтерактивна карта — можна наблизити та переглянути</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Reviews (Elfsight Google Reviews) -->
+    <section class="reviews-section section" id="reviews" style="display:none">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Відгуки</p>
+          <h2 class="section-title">Що кажуть клієнти</h2>
+        </div>
+        <div class="elfsight-app-e018a229-c761-451f-b172-8da693d96435" data-elfsight-app-lazy></div>
       </div>
     </section>
   </main>
@@ -547,6 +542,20 @@
     // Mobile sticky bar - show after scrolling past hero
     const sticky=document.querySelector('.mobile-sticky');
     if(sticky){const hero=document.querySelector('.hero');const showAt=hero?hero.offsetHeight-100:400;window.addEventListener('scroll',()=>{sticky.classList.toggle('visible',window.scrollY>showAt)},{passive:true});}
+  </script>
+
+  <!-- Elfsight Google Reviews -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <script>
+    // Show reviews section only if Elfsight widget loads successfully
+    (function(){
+      const r=document.getElementById('reviews');
+      const w=document.querySelector('.elfsight-app-e018a229-c761-451f-b172-8da693d96435');
+      if(!r||!w)return;
+      const show=()=>{if(w.children.length>0)r.style.display='';};
+      new MutationObserver(show).observe(w,{childList:true,subtree:true});
+      setTimeout(show,5000);
+    })();
   </script>
 </body>
 </html>
